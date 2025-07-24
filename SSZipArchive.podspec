@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '2.0'
   s.source_files = 'SSZipArchive/*.{m,h}', 'SSZipArchive/include/*.{m,h}', 'SSZipArchive/minizip/*.{c,h}'
   s.public_header_files = 'SSZipArchive/*.h'
+  s.resources = 'SSZipArchive/PrivacyInfo.xcprivacy'
   s.libraries = 'z', 'iconv'
   s.framework = 'Security'
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES',
